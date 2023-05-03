@@ -1,0 +1,201 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 680px) {
+  /* rseponsive nav */
+  nav {
+    position: fixed;
+    padding: 0;
+  }
+
+  .home {
+    padding-top: 15%;
+  }
+  nav ul {
+    position: absolute;
+    background-color: #222;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    transition: 0.3s ease-out;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    left: -100vw;
+    max-height: 100vh;
+  }
+
+  nav .toggle_bar {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 24px;
+  }
+
+  .navactive {
+    left: 0;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: fit-content;
+  }
+
+  #about .dashboard div h3,
+  p {
+    font-size: 14px;
+  }
+
+  #about {
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  #about .dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dashboard div {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .dashboard div h3,
+  p {
+    font-size: unset;
+  }
+
+  .contact {
+    padding-top: 50%;
+  }
+  .contact .info h4 {
+    word-break: keep-all;
+    font-size: 14px;
+  }
+
+  .contact .contact-details {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .contact .btn button {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #about .intruduction p {
+    margin-top: 26px;
+  }
+
+  #about .intruduction hr {
+    margin-top: 14px;
+  }
+
+  .contact {
+    position: relative;
+    top: 100px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 800px) and (max-width: 970px) {
+  /* CSS rules for screens between 800px and 970px */
+
+  .home img {
+    height: unset;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 970px) {
+  #about .intruduction {
+    justify-content: unset;
+  }
+
+  #about .intruduction h1 {
+    padding-bottom: 2%;
+  }
+
+  #about .intruduction hr {
+    padding-bottom: 1%;
+    border-top: 1px solid #666;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #about .intruduction {
+    justify-content: space-around;
+  }
+}
+
+/* heights */
+@media (max-height: 650px) {
+  .home .caption h1 {
+    font-size: 24px;
+  }
+
+  .home .caption p {
+    font-size: 14px;
+  }
+
+  .home .caption button {
+    padding: 6px;
+  }
+}
+@media (max-height: 515px) {
+  .home {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+}
+
+@media (max-height: 600px) {
+  .contact {
+    position: relative;
+    top: 10em;
+  }
+}
+@media (max-height: 415px) {
+  .contact {
+    position: relative;
+    top: 20em;
+  }
+}
+@media (max-width: 400px) {
+  .contact .contact-details {
+    padding: 10px;
+    background: #333;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .contact .contact-details h4 {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .contact {
+    top: 260px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact {
+    top: 400px;
+  }
+}
