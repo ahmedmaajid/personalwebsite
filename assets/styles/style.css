@@ -22,6 +22,11 @@ body {
 .fa {
   color: white;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
 hr {
   background: none;
   border: none;
@@ -63,16 +68,6 @@ nav .toggle_bar {
   z-index: 99;
 }
 
-ul .active::after {
-  position: absolute;
-  content: "";
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: white;
-  transition: 0.4s ease;
-}
 nav h1 {
   padding-left: 17px;
   color: var(--white);
@@ -109,9 +104,6 @@ nav ul li a::after {
   background: whitesmoke;
   transition: 0.4s ease;
 }
-.active:hover::after {
-  height: 2px;
-}
 nav ul li a::before {
   position: absolute;
   content: "";
@@ -139,6 +131,15 @@ nav ul li a:hover::before {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   width: 100%;
   height: 87.7%;
+}
+
+.home button {
+  cursor: pointer;
+}
+
+.home button a {
+  text-decoration: none;
+  color: white;
 }
 .home .caption button {
   margin-top: 20px;
@@ -294,7 +295,7 @@ section {
   opacity: 100%;
 }
 
-.social-media p {
+.social-media p a {
   display: flex;
   align-items: center;
 }
@@ -302,7 +303,8 @@ section {
   padding-top: 2%;
   text-align: center;
 }
-.contact button {
+.contact .btn a {
+  text-decoration: none;
   text-align: center;
   opacity: 80%;
   padding: 10px;
@@ -316,7 +318,7 @@ section {
   font-size: 17px;
 }
 
-.btn button:hover {
+.btn a:hover {
   opacity: 100%;
 }
 
@@ -324,8 +326,6 @@ footer {
   padding: 10px;
   background: #222;
   text-align: center;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
