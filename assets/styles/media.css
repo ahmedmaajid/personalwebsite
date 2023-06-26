@@ -9,6 +9,11 @@
   .home {
     padding-top: 15%;
   }
+
+  .gallery {
+    padding-top: 18%;
+  }
+
   nav ul {
     position: absolute;
     background-color: #222;
@@ -60,6 +65,14 @@
     justify-content: center;
   }
 
+  .model {
+    height: 300px;
+    width: 300px;
+  }
+
+  .gallery {
+    padding-top: 25%;
+  }
   .dashboard div {
     padding: 10px;
     text-align: center;
@@ -197,5 +210,9 @@
 @media (max-width: 380px) {
   .contact {
     top: 400px;
+  }
+
+  .gallery {
+    padding-top: 40%;
   }
 }
